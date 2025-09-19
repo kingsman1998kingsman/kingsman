@@ -248,7 +248,7 @@
 
         .service-image {
             width: 100%;
-            height: 220px;
+            height: 300px;
             background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
             display: flex;
             align-items: center;
@@ -314,6 +314,22 @@
             font-size: 0.9rem;
             font-weight: 600;
             border: 1px solid #93c5fd;
+        }
+
+        .contact-for-pricing {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .call-for-pricing {
+            font-size: 1.1rem;
+            color: #1d4ed8;
+            font-weight: 700;
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+            border-radius: 25px;
+            border: 2px solid #93c5fd;
         }
 
         .service-pricing {
@@ -476,7 +492,7 @@
 
         .modal-service-image {
             width: 100%;
-            height: 320px;
+            height: 400px;
             background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
             display: flex;
             align-items: center;
@@ -789,7 +805,7 @@
                     <div class="modal-price" id="modalPrice"></div>
                     <div class="modal-price-desc" id="modalPriceDesc"></div>
                 </div>
-                <button class="book-button" onclick="bookCar()">Select This Vehicle</button>
+                <button class="book-button" onclick="bookCar()">Contact Us for Quote</button>
             </div>
         </div>
     </div>
@@ -1170,11 +1186,10 @@
                         <div class="service-features">
                             ${car.features.map(feature => `<span class="feature-tag">${feature}</span>`).join('')}
                         </div>
-                        <div class="service-pricing">
-                            <span class="price-from">Starting from</span>
-                            <span class="price">${car.pricing.airport.split(' - ')[0]}</span>
+                        <div class="contact-for-pricing">
+                            <span class="call-for-pricing">📞 Call for Pricing & Availability</span>
                         </div>
-                        <button class="book-button" onclick="event.stopPropagation(); bookCar('${car.name}')">Select This Car</button>
+                        <button class="book-button" onclick="event.stopPropagation(); bookCar('${car.name}')">Get Quote</button>
                     </div>
                 `;
                 
@@ -1207,16 +1222,15 @@
                 </div>
             `).join('');
             
-            // Show pricing options with mountain/peak theme
-            const pricingHtml = `
-                <div style="text-align: left; margin-bottom: 1rem;">
-                    <div style="margin-bottom: 0.5rem;"><strong>🛬 ${car.pricing.airport}</strong></div>
-                    <div style="margin-bottom: 0.5rem;"><strong>⏰ ${car.pricing.hourly}</strong></div>
-                    <div><strong>📅 ${car.pricing.daily}</strong></div>
+            // Show contact message instead of pricing
+            modalPrice.innerHTML = `
+                <div style="text-align: center;">
+                    <div style="font-size: 1.5rem; margin-bottom: 1rem;">📞 Contact Us for Pricing</div>
+                    <div style="font-size: 1.1rem; margin-bottom: 0.5rem;">Call: +95 (9) 450-064-909</div>
+                    <div style="font-size: 1.1rem;">Email: info@apexcarrental.com</div>
                 </div>
             `;
-            modalPrice.innerHTML = pricingHtml;
-            modalPriceDesc.textContent = "Professional chauffeur & fuel included - Reach new heights in comfort!";
+            modalPriceDesc.textContent = "Professional chauffeur & fuel included - Contact us for personalized quotes!";
             
             modal.style.display = 'block';
         }
@@ -1229,9 +1243,9 @@
         // Book car function
         function bookCar(carName = '') {
             if (carName) {
-                alert(`🏔️ Excellent choice! You've selected the ${carName}.\n\n🚗 Next steps to reach the peak of luxury travel:\n1. Call us at +95 (9) 450-064-909\n2. Tell us your trip details (airport transfer, city tour, multi-day trip, etc.)\n3. Confirm your dates and pickup location\n\n✅ Your professional chauffeur and fuel are included in all pricing!\n\nApex Car Rental - Where every journey reaches new heights!`);
+                alert(`🚗 Thank you for your interest in the ${carName}!\n\n📞 Please contact us for personalized pricing and availability:\n\n📱 Phone: +95 (9) 450-064-909\n📧 Email: info@apexcarrental.com\n🏢 Address: Building B-1 702, Strand Road, Aung Zey Ya Complex, Alone Township, Yangon\n\n✅ All our vehicles include professional chauffeur and fuel!\n\nApex Car Rental - Your premium transportation partner!`);
             } else {
-                alert('🏔️ Thank you for choosing Apex Car Rental! Please call us at +95 (9) 450-064-909 to select your car and discuss your trip requirements.');
+                alert('🚗 Thank you for choosing Apex Car Rental!\n\n📞 Contact us for pricing and availability:\nPhone: +95 (9) 450-064-909\nEmail: info@apexcarrental.com\n\nWe look forward to serving you!');
             }
             closeModal();
         }
@@ -1304,4 +1318,3 @@
                     "Features": "Executive seats, Premium interior",
                     "Ideal For": "Executive travel, Special events",
                     "Driver": "Professional chauffeur included",
-                
