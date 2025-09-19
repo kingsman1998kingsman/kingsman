@@ -739,6 +739,7 @@
         <p>Reach the peak of luxury travel with our professional driver service</p>
         <p class="hero-subtitle">Choose your preferred car • Professional chauffeur included • Airport transfers • Multi-day trips</p>
         <a href="#fleet" class="cta-button">Rent Now</a>
+        <a href="#contact" class="cta-button cta-secondary">Get Quote</a>
     </section>
 
     <!-- Fleet Section -->
@@ -1186,7 +1187,7 @@
                             ${car.features.map(feature => `<span class="feature-tag">${feature}</span>`).join('')}
                         </div>
                         <div class="contact-for-pricing">
-                            <span class="call-for-pricing">📞 Call for Pricing & Availability</span>
+                            <button class="book-button" onclick="event.stopPropagation(); bookCar('${car.name}')">📞 Call for Pricing & Availability</button>
                         </div>
                     </div>
                 `;
