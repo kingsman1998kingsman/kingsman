@@ -257,6 +257,9 @@
             color: #1d4ed8;
             position: relative;
             overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         .service-image::before {
@@ -483,6 +486,9 @@
             border-radius: 25px 25px 0 0;
             position: relative;
             overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         .modal-service-image::before {
@@ -812,7 +818,7 @@
     </footer>
 
     <script>
-// Car data with chauffeur service pricing in Myanmar Kyat
+        // Car data with chauffeur service pricing in Myanmar Kyat
         const carsData = [
             {
                 id: 1,
@@ -832,28 +838,6 @@
                     "Luggage": "4 Large bags",
                     "Features": "Premium leather seats, Individual captain chairs",
                     "Ideal For": "Family trips, VIP transport",
-                    "Driver": "Professional chauffeur included",
-                    "Fuel": "Included in price"
-                }
-            },
-            {
-                id: 2,
-                name: "Toyota Alphard 2006",
-                type: "Luxury MPV",
-                features: ["Professional Chauffeur", "Executive Interior", "Premium Comfort", "Spacious Design"],
-                emoji: "🚐",
-                image: "../images/alphard_2006.jpg",
-                description: "Enhanced luxury MPV with modern amenities and superior comfort. Perfect for executive travel and special occasions with 5 passengers plus driver.",
-                pricing: {
-                    airport: "MMK 90,000 - Airport Transfer (one way)",
-                    hourly: "MMK 110,000/hour - Executive transport",
-                    daily: "MMK 480,000/day - Premium travel experience"
-                },
-                specs: {
-                    "Passengers": "5 Adults + Driver",
-                    "Luggage": "4 Large bags",
-                    "Features": "Executive seats, Premium interior",
-                    "Ideal For": "Executive travel, Special events",
                     "Driver": "Professional chauffeur included",
                     "Fuel": "Included in price"
                 }
@@ -916,8 +900,8 @@
                     daily: "MMK 680,000/day - Premium group travel"
                 },
                 specs: {
-                    "Passengers": "10-14 for City / 10-12 for Highway + Driver",
-                    "Luggage": "6-8 Large bags",
+                    "Passengers": "6 Adults + Driver",
+                    "Luggage": "4-5 Large bags",
                     "Features": "VIP interior, Premium comfort",
                     "Ideal For": "Corporate groups, VIP travel",
                     "Driver": "Professional chauffeur included",
@@ -1080,7 +1064,7 @@
             },
             {
                 id: 13,
-                name: "Toyota Hiace VIP 10-14 Seaters",
+                name: "Toyota Hiace VIP 10-14 Seaters 2020",
                 type: "VIP Group Transport",
                 features: ["Professional Chauffeur", "VIP Interior", "Premium Comfort", "Luxury Group Travel"],
                 emoji: "🚐",
@@ -1122,6 +1106,50 @@
                     "Fuel": "Included in price"
                 }
             },
+            {
+                id: 15,
+                name: "Toyota Hiace 2019 New Model",
+                type: "Modern Group Transport",
+                features: ["Professional Chauffeur", "New Model", "Comfortable Seating", "Group Travel"],
+                emoji: "🚌",
+                image: "../images/hiace_2019.jpg",
+                description: "Latest model Hiace with modern features and enhanced comfort. Accommodates 13 passengers in the city or 9-11 for highway travel with driver.",
+                pricing: {
+                    airport: "MMK 130,000 - Airport Transfer (one way)",
+                    hourly: "MMK 150,000/hour - Group tours",
+                    daily: "MMK 620,000/day - Multi-day group trips"
+                },
+                specs: {
+                    "Passengers": "13 for City / 9-11 for Highway + Driver",
+                    "Luggage": "6-8 Large bags",
+                    "Features": "New model interior, Enhanced comfort",
+                    "Ideal For": "Group travel, Modern tours",
+                    "Driver": "Professional chauffeur included",
+                    "Fuel": "Included in price"
+                }
+            },
+            {
+                id: 16,
+                name: "Higer Hiace 10-14 Seaters 2020",
+                type: "Premium Group Transport",
+                features: ["Professional Chauffeur", "Premium Interior", "Comfortable Seating", "Group Travel"],
+                emoji: "🚌",
+                image: "../images/higer_hiace.jpg",
+                description: "Premium Higer model with enhanced features. Accommodates 14 passengers with 3 small seats in the city or 10-12 for highway travel with driver.",
+                pricing: {
+                    airport: "MMK 140,000 - Airport Transfer (one way)",
+                    hourly: "MMK 160,000/hour - Premium group tours",
+                    daily: "MMK 650,000/day - Multi-day premium trips"
+                },
+                specs: {
+                    "Passengers": "14 + Small Seat 3pcs for City / 10-12 for Highway + Driver",
+                    "Luggage": "6-8 Large bags",
+                    "Features": "Premium interior, Enhanced seating",
+                    "Ideal For": "Premium group travel, Corporate tours",
+                    "Driver": "Professional chauffeur included",
+                    "Fuel": "Included in price"
+                }
+            }
         ];
 
         // Populate cars grid
@@ -1134,7 +1162,7 @@
                 carCard.onclick = () => openModal(car);
                 
                 carCard.innerHTML = `
-                    <div class="service-image">${car.emoji}</div>
+                    <div class="service-image" style="background-image: url('${car.image}');"></div>
                     <div class="service-details">
                         <h3 class="service-name">${car.name}</h3>
                         <p class="car-type">${car.type}</p>
@@ -1165,7 +1193,8 @@
             const modalPrice = document.getElementById('modalPrice');
             const modalPriceDesc = document.getElementById('modalPriceDesc');
             
-            modalImage.textContent = car.emoji;
+            modalImage.style.backgroundImage = `url('${car.image}')`;
+            modalImage.textContent = '';
             modalTitle.textContent = car.name;
             modalDescription.textContent = car.description;
             modalFeatures.innerHTML = car.features.map(feature => `<span class="feature-tag">${feature}</span>`).join('');
@@ -1255,3 +1284,24 @@
     </script>
 </body>
 </html>
+            },
+            {
+                id: 2,
+                name: "Toyota Alphard 2006",
+                type: "Luxury MPV",
+                features: ["Professional Chauffeur", "Executive Interior", "Premium Comfort", "Spacious Design"],
+                emoji: "🚐",
+                image: "../images/alphard_2006.jpg",
+                description: "Enhanced luxury MPV with modern amenities and superior comfort. Perfect for executive travel and special occasions with 5 passengers plus driver.",
+                pricing: {
+                    airport: "MMK 90,000 - Airport Transfer (one way)",
+                    hourly: "MMK 110,000/hour - Executive transport",
+                    daily: "MMK 480,000/day - Premium travel experience"
+                },
+                specs: {
+                    "Passengers": "5 Adults + Driver",
+                    "Luggage": "4 Large bags",
+                    "Features": "Executive seats, Premium interior",
+                    "Ideal For": "Executive travel, Special events",
+                    "Driver": "Professional chauffeur included",
+                
