@@ -812,45 +812,47 @@
     </footer>
 
     <script>
-        // Car data with chauffeur service pricing in Myanmar Kyat
+// Car data with chauffeur service pricing in Myanmar Kyat
         const carsData = [
             {
                 id: 1,
-                name: "BMW 3 Series",
-                type: "Luxury Sedan",
-                features: ["Professional Chauffeur", "Premium Interior", "GPS Navigation", "Bluetooth Audio"],
-                emoji: "🚙",
-                description: "Perfect for business trips and airport transfers. Combines luxury with efficiency for professional travel in the city and mountains.",
+                name: "Toyota Alphard 2002/3",
+                type: "Premium MPV",
+                features: ["Professional Chauffeur", "Luxury Interior", "Captain Seats", "Premium Comfort"],
+                emoji: "🚐",
+                image: "../images/alphard_white.jpg",
+                description: "Spacious luxury MPV perfect for family trips and VIP transportation. Accommodates 5 passengers plus driver with premium comfort features.",
                 pricing: {
-                    airport: "MMK 65,000 - Airport Transfer (one way)",
-                    hourly: "MMK 85,000/hour - City tours & business",
-                    daily: "MMK 380,000/day - Multi-day trips"
+                    airport: "MMK 85,000 - Airport Transfer (one way)",
+                    hourly: "MMK 105,000/hour - City tours & business",
+                    daily: "MMK 450,000/day - Multi-day family trips"
                 },
                 specs: {
-                    "Passengers": "4 Adults",
-                    "Luggage": "3 Large bags",
-                    "Features": "Leather seats, Climate control",
-                    "Ideal For": "Business travel, Airport transfers",
+                    "Passengers": "5 Adults + Driver",
+                    "Luggage": "4 Large bags",
+                    "Features": "Premium leather seats, Individual captain chairs",
+                    "Ideal For": "Family trips, VIP transport",
                     "Driver": "Professional chauffeur included",
                     "Fuel": "Included in price"
                 }
             },
             {
                 id: 2,
-                name: "Mercedes C-Class",
-                type: "Executive Sedan",
-                features: ["Professional Chauffeur", "Luxury Interior", "Advanced Safety", "Premium Sound"],
-                emoji: "🚘",
-                description: "Executive-level comfort for VIP transportation and special occasions. Perfect for reaching the apex of luxury travel.",
+                name: "Toyota Alphard 2006",
+                type: "Luxury MPV",
+                features: ["Professional Chauffeur", "Executive Interior", "Premium Comfort", "Spacious Design"],
+                emoji: "🚐",
+                image: "../images/alphard_2006.jpg",
+                description: "Enhanced luxury MPV with modern amenities and superior comfort. Perfect for executive travel and special occasions with 5 passengers plus driver.",
                 pricing: {
-                    airport: "MMK 75,000 - Airport Transfer (one way)",
-                    hourly: "MMK 95,000/hour - City tours & business", 
-                    daily: "MMK 420,000/day - Multi-day trips"
+                    airport: "MMK 90,000 - Airport Transfer (one way)",
+                    hourly: "MMK 110,000/hour - Executive transport",
+                    daily: "MMK 480,000/day - Premium travel experience"
                 },
                 specs: {
-                    "Passengers": "4 Adults",
-                    "Luggage": "3 Large bags",
-                    "Features": "Premium leather, Sunroof",
+                    "Passengers": "5 Adults + Driver",
+                    "Luggage": "4 Large bags",
+                    "Features": "Executive seats, Premium interior",
                     "Ideal For": "Executive travel, Special events",
                     "Driver": "Professional chauffeur included",
                     "Fuel": "Included in price"
@@ -858,88 +860,268 @@
             },
             {
                 id: 3,
-                name: "Audi Q5",
-                type: "Luxury SUV",
-                features: ["Professional Chauffeur", "AWD System", "Spacious Interior", "Premium Audio"],
+                name: "Toyota Crown 2002/3",
+                type: "Executive Sedan",
+                features: ["Professional Chauffeur", "Luxury Interior", "Executive Comfort", "Premium Service"],
                 emoji: "🚙",
-                description: "Spacious and comfortable for family trips and group travel to mountains, beaches, or city destinations with superior handling.",
+                image: "../images/crown_2003.jpg",
+                description: "Classic executive sedan offering refined luxury and comfort. Ideal for business meetings and VIP transportation with 3 passengers plus driver.",
                 pricing: {
-                    airport: "MMK 85,000 - Airport Transfer (one way)",
-                    hourly: "MMK 105,000/hour - City tours & sightseeing",
-                    daily: "MMK 480,000/day - Multi-day family trips"
+                    airport: "MMK 70,000 - Airport Transfer (one way)",
+                    hourly: "MMK 90,000/hour - Business transport",
+                    daily: "MMK 380,000/day - Executive travel"
                 },
                 specs: {
-                    "Passengers": "5 Adults",
-                    "Luggage": "4 Large bags",
-                    "Features": "All-wheel drive, Panoramic roof",
-                    "Ideal For": "Family trips, Group travel",
+                    "Passengers": "3 Adults + Driver",
+                    "Luggage": "3 Large bags",
+                    "Features": "Premium leather, Executive comfort",
+                    "Ideal For": "Business travel, VIP transport",
                     "Driver": "Professional chauffeur included",
                     "Fuel": "Included in price"
                 }
             },
             {
                 id: 4,
-                name: "Toyota Camry",
-                type: "Comfort Sedan",
-                features: ["Professional Chauffeur", "Reliable Service", "Safety Features", "Comfortable Ride"],
-                emoji: "🚗",
-                description: "Reliable and comfortable choice for everyday transportation needs at great value. Perfect for budget-conscious travelers.",
+                name: "Toyota Hiace 10-14 Seaters",
+                type: "Group Transport",
+                features: ["Professional Chauffeur", "High Capacity", "Comfortable Seating", "Group Travel"],
+                emoji: "🚌",
+                image: "../images/hiace_standard.jpg",
+                description: "Reliable group transportation for larger parties. Accommodates 10-14 passengers in the city or 10-12 for highway travel with driver.",
                 pricing: {
-                    airport: "MMK 55,000 - Airport Transfer (one way)",
-                    hourly: "MMK 75,000/hour - City transport",
-                    daily: "MMK 320,000/day - Extended trips"
+                    airport: "MMK 120,000 - Airport Transfer (one way)",
+                    hourly: "MMK 140,000/hour - Group tours",
+                    daily: "MMK 580,000/day - Multi-day group trips"
                 },
                 specs: {
-                    "Passengers": "4 Adults", 
-                    "Luggage": "3 Large bags",
-                    "Features": "Advanced safety, Comfortable seats",
-                    "Ideal For": "Budget-friendly trips, Daily transport",
-                    "Driver": "Professional chauffeur included", 
+                    "Passengers": "10-14 for City / 10-12 for Highway + Driver",
+                    "Luggage": "6-8 Large bags",
+                    "Features": "Multiple seating configurations",
+                    "Ideal For": "Group travel, Tours",
+                    "Driver": "Professional chauffeur included",
                     "Fuel": "Included in price"
                 }
             },
             {
                 id: 5,
-                name: "Jeep Wrangler",
-                type: "Adventure SUV",
-                features: ["Professional Chauffeur", "4WD Capability", "Open-Air Option", "Rugged Design"],
-                emoji: "🚜",
-                description: "Perfect for beach trips and outdoor adventures where style meets capability. Ideal for reaching mountain peaks and remote destinations.",
+                name: "Toyota Hiace VIP 2011 6 Seaters",
+                type: "VIP Group Transport",
+                features: ["Professional Chauffeur", "VIP Interior", "Premium Comfort", "Luxury Group Travel"],
+                emoji: "🚐",
+                image: "../images/hiace_vip_2011.jpg",
+                description: "Premium VIP version with enhanced comfort and luxury features. Perfect for corporate groups and luxury travel with 6 highway capacity.",
                 pricing: {
-                    airport: "MMK 90,000 - Airport Transfer (one way)",
-                    hourly: "MMK 110,000/hour - Adventure tours",
-                    daily: "MMK 520,000/day - Beach & mountain trips"
+                    airport: "MMK 150,000 - Airport Transfer (one way)",
+                    hourly: "MMK 170,000/hour - VIP group tours",
+                    daily: "MMK 680,000/day - Premium group travel"
                 },
                 specs: {
-                    "Passengers": "4 Adults",
-                    "Luggage": "2 Large bags + gear",
-                    "Features": "Removable doors/roof, 4WD",
-                    "Ideal For": "Beach trips, Adventure tours",
+                    "Passengers": "10-14 for City / 10-12 for Highway + Driver",
+                    "Luggage": "6-8 Large bags",
+                    "Features": "VIP interior, Premium comfort",
+                    "Ideal For": "Corporate groups, VIP travel",
                     "Driver": "Professional chauffeur included",
                     "Fuel": "Included in price"
                 }
             },
             {
                 id: 6,
-                name: "Tesla Model 3",
-                type: "Electric Luxury",
-                features: ["Professional Chauffeur", "Zero Emissions", "Advanced Tech", "Silent Ride"],
-                emoji: "🔋",
-                description: "Eco-friendly luxury transportation with cutting-edge technology and whisper-quiet ride. The peak of sustainable travel innovation.",
+                name: "Toyota Hiace Royal Lounge 2016",
+                type: "Luxury Lounge",
+                features: ["Professional Chauffeur", "Royal Interior", "Maximum Comfort", "Executive Lounge"],
+                emoji: "🚐",
+                image: "../images/hiace_royal.jpg",
+                description: "Ultimate luxury lounge experience with royal-grade interior. Accommodates 9 passengers in city or 5 for highway with maximum comfort and style.",
                 pricing: {
-                    airport: "MMK 70,000 - Airport Transfer (one way)",
-                    hourly: "MMK 90,000/hour - Eco-friendly tours",
-                    daily: "MMK 400,000/day - Sustainable travel"
+                    airport: "MMK 180,000 - Airport Transfer (one way)",
+                    hourly: "MMK 200,000/hour - Royal luxury transport",
+                    daily: "MMK 780,000/day - Ultimate luxury experience"
                 },
                 specs: {
-                    "Passengers": "4 Adults",
-                    "Luggage": "2 Large bags",
-                    "Features": "Electric drive, Auto-pilot assist",
-                    "Ideal For": "Eco-conscious travel, Tech enthusiasts",
+                    "Passengers": "9 for City / 5 for Highway + Driver",
+                    "Luggage": "4-6 Large bags",
+                    "Features": "Royal interior, Lounge seating",
+                    "Ideal For": "Ultimate luxury, Special occasions",
                     "Driver": "Professional chauffeur included",
-                    "Charging": "Included in price"
+                    "Fuel": "Included in price"
                 }
-            }
+            },
+            {
+                id: 7,
+                name: "Hyundai H1 2021",
+                type: "Modern MPV",
+                features: ["Professional Chauffeur", "Modern Design", "Comfort Seating", "Reliable Transport"],
+                emoji: "🚐",
+                image: "../images/hyundai_h1.jpg",
+                description: "Modern and reliable MPV with contemporary features. Perfect for medium groups with 8-10 city or 5-7 highway capacity plus driver.",
+                pricing: {
+                    airport: "MMK 95,000 - Airport Transfer (one way)",
+                    hourly: "MMK 115,000/hour - Modern group transport",
+                    daily: "MMK 500,000/day - Contemporary travel"
+                },
+                specs: {
+                    "Passengers": "8-10 for City / 5-7 for Highway + Driver",
+                    "Luggage": "5-6 Large bags",
+                    "Features": "Modern interior, Comfortable seating",
+                    "Ideal For": "Medium groups, Modern travel",
+                    "Driver": "Professional chauffeur included",
+                    "Fuel": "Included in price"
+                }
+            },
+            {
+                id: 8,
+                name: "King Long 2012",
+                type: "Large Group Bus",
+                features: ["Professional Chauffeur", "High Capacity", "Tour Bus Comfort", "Long Distance"],
+                emoji: "🚌",
+                image: "../images/kinglong.jpg",
+                description: "Large capacity tour bus perfect for big groups and long-distance travel. Accommodates 33 passengers plus driver with tour-grade comfort.",
+                pricing: {
+                    airport: "MMK 200,000 - Airport Transfer (one way)",
+                    hourly: "MMK 250,000/hour - Large group tours",
+                    daily: "MMK 950,000/day - Extended group travel"
+                },
+                specs: {
+                    "Passengers": "33 Adults + Driver",
+                    "Luggage": "15+ Large bags",
+                    "Features": "Tour bus seating, Long distance comfort",
+                    "Ideal For": "Large groups, Long tours",
+                    "Driver": "Professional chauffeur included",
+                    "Fuel": "Included in price"
+                }
+            },
+            {
+                id: 9,
+                name: "Majesty 2020",
+                type: "Premium MPV",
+                features: ["Professional Chauffeur", "Premium Interior", "Executive Comfort", "Luxury Transport"],
+                emoji: "🚐",
+                image: "../images/majesty.jpg",
+                description: "Premium MPV with executive-level comfort and modern amenities. Perfect for VIP transport with 5 passengers plus driver in luxury style.",
+                pricing: {
+                    airport: "MMK 100,000 - Airport Transfer (one way)",
+                    hourly: "MMK 120,000/hour - Premium transport",
+                    daily: "MMK 520,000/day - Executive travel"
+                },
+                specs: {
+                    "Passengers": "5 Adults + Driver",
+                    "Luggage": "4 Large bags",
+                    "Features": "Premium interior, Executive seating",
+                    "Ideal For": "VIP transport, Executive travel",
+                    "Driver": "Professional chauffeur included",
+                    "Fuel": "Included in price"
+                }
+            },
+            {
+                id: 10,
+                name: "Mercedes Vito Tourer (Massage Seat)",
+                type: "Luxury Van",
+                features: ["Professional Chauffeur", "Massage Seats", "Premium Luxury", "Mercedes Quality"],
+                emoji: "🚐",
+                image: "../images/mercedes_vito.jpg",
+                description: "Ultimate luxury van with massage seats and premium Mercedes quality. Accommodates 6 passengers plus driver with unmatched comfort and luxury.",
+                pricing: {
+                    airport: "MMK 220,000 - Airport Transfer (one way)",
+                    hourly: "MMK 280,000/hour - Ultimate luxury transport",
+                    daily: "MMK 1,100,000/day - Premium luxury experience"
+                },
+                specs: {
+                    "Passengers": "6 Adults + Driver",
+                    "Luggage": "4 Large bags",
+                    "Features": "Massage seats, Premium Mercedes luxury",
+                    "Ideal For": "Ultimate luxury, VIP clients",
+                    "Driver": "Professional chauffeur included",
+                    "Fuel": "Included in price"
+                }
+            },
+            {
+                id: 11,
+                name: "Scania 2013",
+                type: "Luxury Coach",
+                features: ["Professional Chauffeur", "Coach Comfort", "Long Distance", "Premium Bus"],
+                emoji: "🚌",
+                image: "../images/scania.jpg",
+                description: "Premium coach bus for large groups and long-distance luxury travel. Accommodates 44 passengers plus driver with superior comfort and amenities.",
+                pricing: {
+                    airport: "MMK 280,000 - Airport Transfer (one way)",
+                    hourly: "MMK 350,000/hour - Premium coach tours",
+                    daily: "MMK 1,200,000/day - Luxury coach travel"
+                },
+                specs: {
+                    "Passengers": "44 Adults + Driver",
+                    "Luggage": "20+ Large bags",
+                    "Features": "Premium coach seating, Long distance comfort",
+                    "Ideal For": "Large groups, Long distance luxury",
+                    "Driver": "Professional chauffeur included",
+                    "Fuel": "Included in price"
+                }
+            },
+            {
+                id: 12,
+                name: "Toyota Hiace VIP 2007 10-14 Seaters",
+                type: "VIP Group Transport",
+                features: ["Professional Chauffeur", "VIP Interior", "Premium Comfort", "Luxury Group Travel"],
+                emoji: "🚐",
+                image: "../images/hiace_vip_2007.jpg",
+                description: "Premium VIP version with enhanced comfort and luxury features. Perfect for corporate groups and luxury travel with 10-14 city or 10-12 highway capacity.",
+                pricing: {
+                    airport: "MMK 150,000 - Airport Transfer (one way)",
+                    hourly: "MMK 170,000/hour - VIP group tours",
+                    daily: "MMK 680,000/day - Premium group travel"
+                },
+                specs: {
+                    "Passengers": "10-14 for City / 10-12 for Highway + Driver",
+                    "Luggage": "6-8 Large bags",
+                    "Features": "VIP interior, Premium comfort",
+                    "Ideal For": "Corporate groups, VIP travel",
+                    "Driver": "Professional chauffeur included",
+                    "Fuel": "Included in price"
+                }
+            },
+            {
+                id: 13,
+                name: "Toyota Hiace VIP 10-14 Seaters",
+                type: "VIP Group Transport",
+                features: ["Professional Chauffeur", "VIP Interior", "Premium Comfort", "Luxury Group Travel"],
+                emoji: "🚐",
+                image: "../images/hiace_vip_14seater.jpg",
+                description: "Premium VIP version with enhanced comfort and luxury features. Perfect for corporate groups and luxury travel with 10-14 city or 10-12 highway capacity.",
+                pricing: {
+                    airport: "MMK 150,000 - Airport Transfer (one way)",
+                    hourly: "MMK 170,000/hour - VIP group tours",
+                    daily: "MMK 680,000/day - Premium group travel"
+                },
+                specs: {
+                    "Passengers": "10-14 for City / 10-12 for Highway + Driver",
+                    "Luggage": "6-8 Large bags",
+                    "Features": "VIP interior, Premium comfort",
+                    "Ideal For": "Corporate groups, VIP travel",
+                    "Driver": "Professional chauffeur included",
+                    "Fuel": "Included in price"
+                }
+            },
+            {
+                id: 14,
+                name: "Toyota Alphard 2003",
+                type: "Luxury MPV",
+                features: ["Professional Chauffeur", "Executive Interior", "Premium Comfort", "Spacious Design"],
+                emoji: "🚐",
+                image: "../images/alphard_2003.jpg",
+                description: "Enhanced luxury MPV with modern amenities and superior comfort. Perfect for executive travel and special occasions with 5 passengers plus driver.",
+                pricing: {
+                    airport: "MMK 90,000 - Airport Transfer (one way)",
+                    hourly: "MMK 110,000/hour - Executive transport",
+                    daily: "MMK 480,000/day - Premium travel experience"
+                },
+                specs: {
+                    "Passengers": "5 Adults + Driver",
+                    "Luggage": "4 Large bags",
+                    "Features": "Executive seats, Premium interior",
+                    "Ideal For": "Executive travel, Special events",
+                    "Driver": "Professional chauffeur included",
+                    "Fuel": "Included in price"
+                }
+            },
         ];
 
         // Populate cars grid
