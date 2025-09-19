@@ -1186,9 +1186,7 @@
                         <div class="service-features">
                             ${car.features.map(feature => `<span class="feature-tag">${feature}</span>`).join('')}
                         </div>
-                        <div class="contact-for-pricing">
-                            <button class="book-button" onclick="event.stopPropagation(); bookCar('${car.name}')">📞 Call for Pricing & Availability</button>
-                        </div>
+                        <button class="book-button" onclick="event.stopPropagation(); bookCar('${car.name}')">📞 Call for Pricing & Availability</button>
                     </div>
                 `;
                 
