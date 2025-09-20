@@ -24,11 +24,6 @@
             background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 50%, #2563eb 100%);
             color: white;
             padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            backdrop-filter: blur(10px);
             box-shadow: 0 4px 20px rgba(30, 58, 138, 0.3);
         }
 
@@ -101,7 +96,7 @@
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 50%, #2563eb 100%);
-            padding: 140px 2rem 100px;
+            padding: 100px 2rem;
             text-align: center;
             color: white;
             position: relative;
@@ -702,7 +697,7 @@
 
         @media (max-width: 480px) {
             .hero {
-                padding: 120px 1rem 80px;
+                padding: 80px 1rem;
             }
             
             .hero h1 {
@@ -818,14 +813,14 @@
             <div class="contact-info">
                 <div class="contact-item">
                     <span>📞</span>
-                    <span>+95 (9) 450-064-909</span>
+                    <a href="tel:+959450064909" style="color: inherit; text-decoration: none;">+95 (9) 450-064-909</a>
                 </div>
                 <div class="contact-item">
                     <span>📧</span>
-                    <span>info@apexcarrental.com</span>
+                    <a href="mailto:info@apexcarrental.com" style="color: inherit; text-decoration: none;">info@apexcarrental.com</a>
                 </div>
                 <div class="contact-item">
-                    <span>🏔️</span>
+                    <span>📍</span>
                     <span>building b, Building(B-1) 702, Strand Road, Aung Zey Ya Complex, Alone Township, Yangon, Myanmar</span>
                 </div>
             </div>
@@ -854,6 +849,28 @@
                     "Luggage": "4 Large bags",
                     "Features": "Premium leather seats, Individual captain chairs",
                     "Ideal For": "Family trips, VIP transport",
+                    "Driver": "Professional chauffeur included",
+                    "Fuel": "Included in price"
+                }
+            },
+            {
+                id: 2,
+                name: "Toyota Alphard 2006",
+                type: "Luxury MPV",
+                features: ["Professional Chauffeur", "Executive Interior", "Premium Comfort", "Spacious Design"],
+                emoji: "🚐",
+                image: "../images/alphard_2006.jpg",
+                description: "Enhanced luxury MPV with modern amenities and superior comfort. Perfect for executive travel and special occasions with 5 passengers plus driver.",
+                pricing: {
+                    airport: "MMK 90,000 - Airport Transfer (one way)",
+                    hourly: "MMK 110,000/hour - Executive transport",
+                    daily: "MMK 480,000/day - Premium travel experience"
+                },
+                specs: {
+                    "Passengers": "5 Adults + Driver",
+                    "Luggage": "4 Large bags",
+                    "Features": "Executive seats, Premium interior",
+                    "Ideal For": "Executive travel, Special events",
                     "Driver": "Professional chauffeur included",
                     "Fuel": "Included in price"
                 }
@@ -1240,9 +1257,17 @@
         // Book car function
         function bookCar(carName = '') {
             if (carName) {
-                alert(`🚗 Thank you for your interest in the ${carName}!\n\n📞 Please contact us for personalized pricing and availability:\n\n📱 Phone: +95 (9) 450-064-909\n📧 Email: info@apexcarrental.com\n🏢 Address: Building B-1 702, Strand Road, Aung Zey Ya Complex, Alone Township, Yangon\n\n✅ All our vehicles include professional chauffeur and fuel!\n\nApex Car Rental - Your premium transportation partner!`);
+                const userChoice = confirm(`🚗 Thank you for your interest in the ${carName}!\n\n📞 Would you like to call us now for personalized pricing and availability?\n\n📱 Phone: +95 (9) 450-064-909\n📧 Email: info@apexcarrental.com\n🏢 Address: Building B-1 702, Strand Road, Aung Zey Ya Complex, Alone Township, Yangon\n\n✅ All our vehicles include professional chauffeur and fuel!\n\nApex Car Rental - Your premium transportation partner!\n\nClick OK to call now, or Cancel to close.`);
+                
+                if (userChoice) {
+                    window.open('tel:+959450064909', '_self');
+                }
             } else {
-                alert('🚗 Thank you for choosing Apex Car Rental!\n\n📞 Contact us for pricing and availability:\nPhone: +95 (9) 450-064-909\nEmail: info@apexcarrental.com\n\nWe look forward to serving you!');
+                const userChoice = confirm('🚗 Thank you for choosing Apex Car Rental!\n\n📞 Would you like to call us now for pricing and availability?\nPhone: +95 (9) 450-064-909\nEmail: info@apexcarrental.com\n\nClick OK to call now, or Cancel to close.');
+                
+                if (userChoice) {
+                    window.open('tel:+959450064909', '_self');
+                }
             }
             closeModal();
         }
@@ -1295,23 +1320,3 @@
     </script>
 </body>
 </html>
-            },
-            {
-                id: 2,
-                name: "Toyota Alphard 2006",
-                type: "Luxury MPV",
-                features: ["Professional Chauffeur", "Executive Interior", "Premium Comfort", "Spacious Design"],
-                emoji: "🚐",
-                image: "../images/alphard_2006.jpg",
-                description: "Enhanced luxury MPV with modern amenities and superior comfort. Perfect for executive travel and special occasions with 5 passengers plus driver.",
-                pricing: {
-                    airport: "MMK 90,000 - Airport Transfer (one way)",
-                    hourly: "MMK 110,000/hour - Executive transport",
-                    daily: "MMK 480,000/day - Premium travel experience"
-                },
-                specs: {
-                    "Passengers": "5 Adults + Driver",
-                    "Luggage": "4 Large bags",
-                    "Features": "Executive seats, Premium interior",
-                    "Ideal For": "Executive travel, Special events",
-                    "Driver": "Professional chauffeur included",
