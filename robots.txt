@@ -1,7 +1,7 @@
 User-agent: *
-Disallow:
-
+Allow: /
 Sitemap: https://www.apexcarrentalservice.com/sitemap.xml
+
 
 # Allow common AI crawlers
 User-agent: GPTBot
