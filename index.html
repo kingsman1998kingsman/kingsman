@@ -735,39 +735,52 @@
 {
   "@context": "https://schema.org",
   "@type": "CarRental",
+  "@id": "https://www.apexcarrentalservice.com/#org",
   "name": "Apex Car Rental Service",
   "url": "https://www.apexcarrentalservice.com/",
   "logo": "https://www.apexcarrentalservice.com/images/logo.png",
-  "image": "https://www.apexcarrentalservice.com/images/logo.png",
+  "image": "https://www.apexcarrentalservice.com/images/og-image.jpg",
   "description": "Premium chauffeur-driven car rental in Yangon, Myanmar. Airport transfers, city tours, business travel, weddings, and group trips with professional drivers.",
-  "telephone": "+95 9 450-064-909",
+  "telephone": "+95 9 450064909",
   "priceRange": "MMK",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Building B-1 702, Strand Road, Aung Zey Ya Complex, Alone Township",
+    "streetAddress": "Building B-1, Room 702, Aung Zeya Complex, Strand Road, Ahlone Township",
     "addressLocality": "Yangon",
     "addressRegion": "Yangon Region",
     "postalCode": "11131",
     "addressCountry": "MM"
   },
-  "areaServed": ["Yangon","Myanmar"],
-  "currenciesAccepted": ["MMK","USD"],
-  "paymentAccepted": ["Cash","BankTransfer","KBZPay","WavePay"],
-  "contactPoint": [{
-    "@type": "ContactPoint",
-    "telephone": "+95 9 450-064-909",
-    "contactType": "customer service",
-    "availableLanguage": ["en","my","ja"]
-  }],
-  "hasMap": "https://maps.google.com/?q=Q4QF%2B5M%20%E3%83%A4%E3%83%B3%E3%82%B4%E3%83%B3%2C%20%E3%83%9F%E3%83%A3%E3%83%B3%E3%83%9E%E3%83%BC",
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": "16.77",          /* <- replace with exact lat if you have it */
-    "longitude": "96.16"          /* <- replace with exact lng if you have it */
+    "latitude": 16.77,
+    "longitude": 96.16
   },
+  "hasMap": "https://maps.google.com/?q=Q4QF%2B5M%20Yangon%2C%20Myanmar",
+  "areaServed": [{"@type":"Place","name":"Yangon"},{"@type":"Country","name":"Myanmar"}],
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "08:00",
+    "closes": "20:00"
+  }],
+  "paymentAccepted": "Cash, BankTransfer, KBZPay, WavePay",
   "sameAs": [
     "https://www.facebook.com/share/1CQzNUWz1H/?mibextid=wwXIfr"
-  ]
+  ],
+  "makesOffer": [{
+    "@type": "Offer",
+    "name": "Airport Transfer (Yangon International Airport)",
+    "priceCurrency": "MMK",
+    "url": "https://www.apexcarrentalservice.com/#airport-transfer",
+    "availability": "https://schema.org/InStock"
+  },{
+    "@type": "Offer",
+    "name": "Chauffeur Service (Hourly / Daily)",
+    "priceCurrency": "MMK",
+    "url": "https://www.apexcarrentalservice.com/#chauffeur",
+    "availability": "https://schema.org/InStock"
+  }]
 }
 </script>
 <body>
