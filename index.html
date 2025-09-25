@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <!-- Canonical + basic SEO -->
+    <link rel="canonical" href="https://www.apexcarrentalservice.com/">
+    <meta name="description" content="Apex Car Rental Service — premium chauffeur-driven car rentals in Yangon, Myanmar. Airport transfers, city tours, business travel, and special events with professional drivers.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.apexcarrentalservice.com/">
+    <meta property="og:title" content="Apex Car Rental - Premium Chauffeur Service">
+    <meta property="og:description" content="Premium chauffeur-driven car rentals in Yangon. Toyota Alphard, Crown, Hiace, Mercedes with professional drivers.">
+    <meta property="og:image" content="https://www.apexcarrentalservice.com/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Apex Car Rental - Premium Chauffeur Service">
+    <meta name="twitter:description" content="Premium chauffeur-driven car rentals in Yangon with professional drivers.">
+    <meta name="twitter:image" content="https://www.apexcarrentalservice.com/images/logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apex Car Rental - Premium Chauffeur Service</title>
@@ -714,6 +731,45 @@
         }
     </style>
 </head>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CarRental",
+  "name": "Apex Car Rental Service",
+  "url": "https://www.apexcarrentalservice.com/",
+  "logo": "https://www.apexcarrentalservice.com/images/logo.png",
+  "image": "https://www.apexcarrentalservice.com/images/logo.png",
+  "description": "Premium chauffeur-driven car rental in Yangon, Myanmar. Airport transfers, city tours, business travel, weddings, and group trips with professional drivers.",
+  "telephone": "+95 9 450-064-909",
+  "priceRange": "MMK",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Building B-1 702, Strand Road, Aung Zey Ya Complex, Alone Township",
+    "addressLocality": "Yangon",
+    "addressRegion": "Yangon Region",
+    "postalCode": "11131",
+    "addressCountry": "MM"
+  },
+  "areaServed": ["Yangon","Myanmar"],
+  "currenciesAccepted": ["MMK","USD"],
+  "paymentAccepted": ["Cash","BankTransfer","KBZPay","WavePay"],
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "telephone": "+95 9 450-064-909",
+    "contactType": "customer service",
+    "availableLanguage": ["en","my","ja"]
+  }],
+  "hasMap": "https://maps.google.com/?q=Q4QF%2B5M%20%E3%83%A4%E3%83%B3%E3%82%B4%E3%83%B3%2C%20%E3%83%9F%E3%83%A3%E3%83%B3%E3%83%9E%E3%83%BC",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "16.77",          /* <- replace with exact lat if you have it */
+    "longitude": "96.16"          /* <- replace with exact lng if you have it */
+  },
+  "sameAs": [
+    "https://www.facebook.com/share/1CQzNUWz1H/?mibextid=wwXIfr"
+  ]
+}
+</script>
 <body>
     <!-- Header -->
     <header class="header">
@@ -805,6 +861,16 @@
         </div>
     </div>
 
+    <section id="faq" class="services-section">
+    <h2 class="section-title">FAQ</h2>
+    <p class="section-subtitle">Common questions from our customers</p>
+
+    <p><strong>Do all rentals include a chauffeur?</strong><br>Yes, every vehicle includes a professional driver.</p>
+    <p><strong>Do you provide airport transfers?</strong><br>Yes, 24/7 Yangon airport pickup and drop-off are available.</p>
+    <p><strong>What payment methods are accepted?</strong><br>KBZPay, WavePay, bank transfer, and cash. USD can be arranged on request.</p>
+    </section>
+
+
     <!-- Footer -->
     <footer class="footer" id="contact">
         <div class="footer-content">
@@ -828,6 +894,29 @@
         </div>
     </footer>
 
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+        "@type": "Question",
+        "name": "Do all rentals include a chauffeur?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, every vehicle includes a professional driver." }
+        },
+        {
+        "@type": "Question",
+        "name": "Do you provide airport transfers?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, 24/7 Yangon airport pickup and drop-off are available." }
+        },
+        {
+        "@type": "Question",
+        "name": "What payment methods are accepted?",
+        "acceptedAnswer": { "@type": "Answer", "text": "KBZPay, WavePay, bank transfer, and cash. USD can be arranged on request." }
+        }
+    ]
+    }
+    </script>
     <script>
         // Car data with chauffeur service pricing in Myanmar Kyat
         const carsData = [
