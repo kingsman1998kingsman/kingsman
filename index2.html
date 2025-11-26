@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <link rel="canonical" href="https://www.apexcarrentalservice.com/">
+        <!-- Canonical + basic SEO -->
+    <link rel="canonical" href="https://www.apexcarrentalservice.com/">
     <meta name="description" content="Apex Car Rental Service — premium chauffeur-driven car rentals in Yangon, Myanmar. Airport transfers, city tours, business travel, and special events with professional drivers.">
     <meta name="robots" content="index, follow">
 
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.apexcarrentalservice.com/">
     <meta property="og:title" content="Apex Car Rental - Premium Chauffeur Service">
     <meta property="og:description" content="Premium chauffeur-driven car rentals in Yangon. Toyota Alphard, Crown, Hiace, Mercedes with professional drivers.">
     <meta property="og:image" content="https://www.apexcarrentalservice.com/images/logo.png">
 
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Apex Car Rental - Premium Chauffeur Service">
     <meta name="twitter:description" content="Premium chauffeur-driven car rentals in Yangon with professional drivers.">
@@ -39,9 +42,6 @@
             color: white;
             padding: 1rem 0;
             box-shadow: 0 4px 20px rgba(30, 58, 138, 0.3);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
         }
 
         .nav {
@@ -195,132 +195,6 @@
             background: white;
             color: #1d4ed8;
             box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
-        }
-
-        /* ABOUT / PROFILE SECTION STYLES */
-        .about-section {
-            background: white;
-            padding: 80px 2rem;
-            position: relative;
-        }
-        
-        .about-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-            margin-bottom: 4rem;
-        }
-
-        .about-text h3 {
-            font-size: 2rem;
-            color: #1e3a8a;
-            margin-bottom: 1.5rem;
-            font-weight: 800;
-        }
-
-        .about-text p {
-            color: #64748b;
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-        }
-
-        .stat-card {
-            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-            padding: 2rem;
-            border-radius: 20px;
-            text-align: center;
-            border: 1px solid #bae6fd;
-        }
-
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 900;
-            color: #2563eb;
-            margin-bottom: 0.5rem;
-        }
-
-        .stat-label {
-            color: #475569;
-            font-weight: 600;
-        }
-
-        .mission-vision-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .mv-card {
-            background: #1e3a8a;
-            color: white;
-            padding: 3rem;
-            border-radius: 25px;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 15px 40px rgba(30, 58, 138, 0.2);
-        }
-
-        .mv-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 150px;
-            height: 150px;
-            background: rgba(255,255,255,0.05);
-            border-radius: 0 0 0 100%;
-        }
-
-        .mv-title {
-            font-size: 1.8rem;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .mv-text {
-            font-size: 1.1rem;
-            line-height: 1.7;
-            opacity: 0.9;
-        }
-
-        .trust-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            margin-top: 4rem;
-        }
-
-        .trust-item {
-            text-align: center;
-        }
-
-        .trust-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            background: #eff6ff;
-            width: 80px;
-            height: 80px;
-            line-height: 80px;
-            border-radius: 50%;
-            margin: 0 auto 1rem;
-            color: #2563eb;
         }
 
         /* Fleet Section */
@@ -811,11 +685,6 @@
                 grid-template-columns: 1fr;
             }
             
-            .about-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-            
             .contact-info {
                 flex-direction: column;
                 align-items: center;
@@ -915,12 +784,12 @@
 }
 </script>
 <body>
+    <!-- Header -->
     <header class="header">
         <nav class="nav">
             <div class="logo">Apex Car Rental</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
                 <li><a href="#fleet">Our Cars</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -928,6 +797,7 @@
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero" id="home">
         <h1>Premium Chauffeur Service</h1>
         <p>Reach the peak of luxury travel with our professional driver service</p>
@@ -936,81 +806,16 @@
         <a href="#contact" class="cta-button cta-secondary">Get Quote</a>
     </section>
 
-    <section class="about-section" id="about">
-        <div class="about-container">
-            <h2 class="section-title">About Apex</h2>
-            <p class="section-subtitle">Forever Apex Co., Ltd.</p>
-            
-            <div class="about-grid">
-                <div class="about-text">
-                    <h3>Your Trusted Partner in Mobility</h3>
-                    [cite_start]<p>Apex Car Rental Service is a primary brand under Forever Apex Co., Ltd. Our journey began in February 2014, and we were formally established as a JICA Company Registration in 2017[cite: 10].</p>
-                    <p>With over 9 years of official corporate experience, we have grown into a stable, trustworthy, and influential company. [cite_start]We provide comprehensive transportation solutions ranging from individual travel to corporate logistics[cite: 11, 23].</p>
-                    [cite_start]<p>Our fleet features a wide selection of vehicles from 3 to 45 seaters, ensuring we can accommodate any group size for business, sightseeing, or long-term rental needs[cite: 25].</p>
-                </div>
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-number">2014</div>
-                        <div class="stat-label">Established</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">24/7</div>
-                        <div class="stat-label">Emergency Support</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Safety Record</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">VIP</div>
-                        <div class="stat-label">Premium Service</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mission-vision-container">
-                <div class="mv-card">
-                    <div class="mv-title">🎯 Our Mission</div>
-                    <p class="mv-text">To be your trusted partner in mobility by providing "a Safe and Smart Way" for all your journeys. [cite_start]We are committed to delivering reliable, well-maintained vehicles and professional drivers[cite: 16, 17].</p>
-                </div>
-                <div class="mv-card">
-                    <div class="mv-title">👁️ Our Vision</div>
-                    [cite_start]<p class="mv-text">To redefine car rental experiences across the region by becoming the symbol of safety and smart travel, where every customer feels empowered, secure, and valued[cite: 19].</p>
-                </div>
-            </div>
-
-            <div class="trust-grid">
-                <div class="trust-item">
-                    <div class="trust-icon">🛠️</div>
-                    <h4>Rigorous Maintenance</h4>
-                    [cite_start]<p style="font-size: 0.9rem; color: #64748b;">Vehicles maintained to highest tour-grade standards[cite: 83].</p>
-                </div>
-                <div class="trust-item">
-                    <div class="trust-icon">👨‍✈️</div>
-                    <h4>Professional Drivers</h4>
-                    [cite_start]<p style="font-size: 0.9rem; color: #64748b;">Skilled, disciplined, and reliable chauffeurs[cite: 78].</p>
-                </div>
-                <div class="trust-item">
-                    <div class="trust-icon">🛰️</div>
-                    <h4>Real-time GPS</h4>
-                    [cite_start]<p style="font-size: 0.9rem; color: #64748b;">Advanced tracking for your security[cite: 85].</p>
-                </div>
-                <div class="trust-item">
-                    <div class="trust-icon">🛡️</div>
-                    <h4>Full Insurance</h4>
-                    [cite_start]<p style="font-size: 0.9rem; color: #64748b;">Comprehensive coverage for peace of mind[cite: 84].</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- Fleet Section -->
     <section class="services-section" id="fleet">
         <h2 class="section-title">Our Vehicle</h2>
         <p class="section-subtitle">Select from our premium fleet - all include professional chauffeur service</p>
         <div class="services-grid" id="carsGrid">
-            </div>
+            <!-- Cars will be populated by JavaScript -->
+        </div>
     </section>
 
+    <!-- Services Section -->
     <section class="fleet-section" id="services">
         <div class="fleet-content">
             <h2 class="section-title">Our Trip Services</h2>
@@ -1019,40 +824,41 @@
                 <div class="fleet-card">
                     <div class="fleet-icon">✈️</div>
                     <h3 class="fleet-title">Airport Transfer</h3>
-                    [cite_start]<p class="fleet-description">Professional pickup and drop-off service with flight tracking and meet & greet[cite: 29].</p>
-                </div>
-                <div class="fleet-card">
-                    <div class="fleet-icon">🏢</div>
-                    <h3 class="fleet-title">Corporate Ferry</h3>
-                    <p class="fleet-description">Dedicated shuttle solutions for Companies, NGOs, Banks, and Hotels. [cite_start]One-way, Two-way, and Three-shift options available [cite: 31-34].</p>
-                </div>
-                <div class="fleet-card">
-                    <div class="fleet-icon">📅</div>
-                    <h3 class="fleet-title">Long-Term Rental</h3>
-                    <p class="fleet-description">Flexible monthly rental plans. [cite_start]Choose "With Driver, Without Fuel" or the complete "One-Stop Service" [cite: 35-37].</p>
+                    <p class="fleet-description">Professional pickup and drop-off service with flight tracking and meet & greet</p>
                 </div>
                 <div class="fleet-card">
                     <div class="fleet-icon">🏖️</div>
-                    <h3 class="fleet-title">Tours & Travel</h3>
-                    [cite_start]<p class="fleet-description">Full-day and half-day rental services for sightseeing, beach trips, and business delegations[cite: 27, 28].</p>
+                    <h3 class="fleet-title">Beach Trips</h3>
+                    <p class="fleet-description">1-2 day coastal getaways with round-trip transportation and local area tours</p>
                 </div>
                 <div class="fleet-card">
-                    <div class="fleet-icon">🚌</div>
-                    <h3 class="fleet-title">Group Transport</h3>
-                    [cite_start]<p class="fleet-description">Large group logistics using our 19-45 seater coaches and minibuses[cite: 65, 66].</p>
+                    <div class="fleet-icon">🏛️</div>
+                    <h3 class="fleet-title">City Tours</h3>
+                    <p class="fleet-description">Half-day or full-day sightseeing with local expert drivers and flexible itineraries</p>
                 </div>
                 <div class="fleet-card">
-                    <div class="fleet-icon">🌟</div>
-                    <h3 class="fleet-title">VIP Limousine</h3>
-                    [cite_start]<p class="fleet-description">High-end vehicles like Mercedes Vito Tourer and Toyota Majesty for VIP delegations [cite: 41-43].</p>
+                    <div class="fleet-icon">💼</div>
+                    <h3 class="fleet-title">Business Travel</h3>
+                    <p class="fleet-description">Executive transportation for meetings and corporate events with WiFi and privacy</p>
+                </div>
+                <div class="fleet-card">
+                    <div class="fleet-icon">🍷</div>
+                    <h3 class="fleet-title">Company Dinner</h3>
+                    <p class="fleet-description">Corporate dining events with safe return transportation and group coordination</p>
+                </div>
+                <div class="fleet-card">
+                    <div class="fleet-icon">🎉</div>
+                    <h3 class="fleet-title">Special Events</h3>
+                    <p class="fleet-description">Weddings, celebrations, and private party transportation with elegant styling</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Modal -->
     <div id="serviceModal" class="modal">
         <div class="modal-content">
-            <span class="close">×</span>
+            <span class="close">&times;</span>
             <div class="modal-service-image" id="modalServiceImage">🚗</div>
             <div class="modal-details">
                 <h2 class="modal-title" id="modalTitle"></h2>
@@ -1078,6 +884,7 @@
     </section>
 
 
+    <!-- Footer -->
     <footer class="footer" id="contact">
         <div class="footer-content">
             <h3>Contact Apex Car Rental</h3>
@@ -1093,10 +900,10 @@
                 </div>
                 <div class="contact-item">
                     <span>📍</span>
-                    <span>Building B-1, Room 702, Aung Zeya Complex, Strand Road, Ahlone Township, Yangon</span>
+                    <span>building b, Building(B-1) 702, Strand Road, Aung Zey Ya Complex, Alone Township, Yangon, Myanmar</span>
                 </div>
             </div>
-            <p>© 2025 Apex Car Rental. All rights reserved.</p>
+            <p>&copy; 2025 Apex Car Rental. All rights reserved.</p>
         </div>
     </footer>
 
